@@ -5,8 +5,8 @@ import play.api.mvc._
 /**
   * Created by oliverslade on 17/08/17.
   */
-class WelcomeController extends Controller{
+class WelcomeController extends Controller {
   def index = Action { implicit request =>
-  Ok(views.html.welcome())
+    Ok(views.html.welcome())
   }
 }

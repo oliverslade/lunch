@@ -10,5 +10,5 @@ class RealSandwichService extends SandwichService {
 
 @ImplementedBy(classOf[RealSandwichService])
 trait SandwichService {
-  def sandwiches() : List[Sandwich]
+  def sandwiches(): List[Sandwich]
 }

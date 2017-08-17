@@ -32,10 +32,10 @@ class SandwichControllerSpec extends PlaySpec with GuiceOneAppPerTest {
       val result = controller.sandwiches().apply(FakeRequest())
 
       contentAsString(result) must not include "<p>Sorry, we're sold out</p>"
-      contentAsString(result) must include ("Please choose a sandwich")
-      contentAsString(result) must include ("Ham")
-      contentAsString(result) must include ("Very tasty")
-      contentAsString(result) must include ("£1.55")
+      contentAsString(result) must include("Please choose a sandwich")
+      contentAsString(result) must include("Ham")
+      contentAsString(result) must include("Very tasty")
+      contentAsString(result) must include("£1.55")
     }
   }
 }

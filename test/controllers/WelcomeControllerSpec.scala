@@ -25,8 +25,8 @@ class WelcomeControllerSpec extends PlaySpec with GuiceOneAppPerTest {
   "say hello and have a title" in {
     val controller = new WelcomeController
     val result = controller.index().apply(FakeRequest(GET, "/foo"))
-    contentAsString(result) must include ("<h1>Hello!</h1>")
-    contentAsString(result) must include ("<title>Welcome!</title>")
+    contentAsString(result) must include("<h1>Hello!</h1>")
+    contentAsString(result) must include("<title>Welcome!</title>")
   }
 
 }
