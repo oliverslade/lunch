@@ -1,12 +1,13 @@
 @(sandwiches: List[Sandwich])
 
 @main("Sandwiches") {
-<h1>Have a look at today's sandwiches</h1>
-@if(sandwiches.isEmpty) {
-<p>Sorry, we're sold out</p>
-} else {
-<p>Please choose a sandwich</p>
-<!-- illustrative code for the purpose of a demo -->
-<p>@sandwiches(0).name, @sandwiches(0).description, £@sandwiches(0).price</p>
-}
+    <h1>Have a look at today's sandwiches</h1>
+    @if(sandwiches.isEmpty) {
+        <p>Sorry, we're sold out</p>
+    } else {
+        <p>Please choose a sandwich</p>
+        @for(s <- sandwiches) {
+        <li>@s.name, @s.description, £@s.price</li>
+        }
+    }
 }
