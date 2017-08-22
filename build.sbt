@@ -1,4 +1,4 @@
-name := """lunch"""
+name := """sandwich-shop"""
 organization := "HMRC"
 
 version := "1.0-SNAPSHOT"
